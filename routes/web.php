@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/quote', 'QuoteController@store');
+Route::put('/quote/{quote}', 'QuoteController@update');
